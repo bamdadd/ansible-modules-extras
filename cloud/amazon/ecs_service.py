@@ -50,7 +50,7 @@ options:
         required: false
     load_balancers:
         description:
-          - The list of ELBs defined for this service
+          - The list of ELBs defined for this service.  Each ELB should have loadBalancerName, containerName and containerPort defined. Also role parameter should be defined if we are defining laod_balancers.
         required: false
 
     desired_count:
